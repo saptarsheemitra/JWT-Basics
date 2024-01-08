@@ -7,11 +7,11 @@ const PORT = 8000;
 const mainRoutes = require('./routes/main');
 
 // Middleware
-app.use(express.static('./public'))
+app.use(express.static('./public'));
 app.use(express.json());
 
 //Routes
-app.use('/api/v1', mainRoutes)
+app.use('/api/v1', mainRoutes);
 
 const start = async () => {
     try {
